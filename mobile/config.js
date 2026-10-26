@@ -1,0 +1,2 @@
+window.APP_CONFIG = {"name": "飞牌", "short": "飞牌", "key": "feipaidtc", "base": "/pai/", "color": "#22c55e", "intro": "品牌出海 · 直连用户", "user": "admin", "pwd": "admin123"};
+window.TABLE_ICONS = {"products": "🛍️", "goods": "🛍️", "live_rooms": "📺", "rooms": "📺", "live_comments": "💬", "comments": "💬", "cart": "🛒", "orders": "🧾", "users": "👥", "group_buys": "🔥", "coupons": "🎟️", "stores": "🏪", "suppliers": "🏭", "members": "💳", "skus": "📦", "posts": "📝", "deliveries": "🚚", "warehouses": "🏬", "brands": "🏷️", "customs": "🛃", "riders": "🛵", "categories": "🗂️", "reviews": "⭐"};
