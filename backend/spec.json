@@ -1,0 +1,288 @@
+{
+  "brand": {
+    "name": "飞牌",
+    "full": "飞牌品牌独立站(DTC)",
+    "tagline": "品牌出海 · 直连用户",
+    "port": 8111
+  },
+  "tables": [
+    {
+      "name": "products",
+      "label": "品牌商品",
+      "fields": [
+        {
+          "name": "title",
+          "label": "商品名",
+          "type": "text"
+        },
+        {
+          "name": "price",
+          "label": "售价(USD)",
+          "type": "number"
+        },
+        {
+          "name": "stock",
+          "label": "库存",
+          "type": "int"
+        },
+        {
+          "name": "series",
+          "label": "产品系列",
+          "type": "text"
+        },
+        {
+          "name": "desc",
+          "label": "卖点",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "Aurora 无线降噪耳机",
+          249,
+          1500,
+          "耳机系列",
+          "品牌旗舰 36h续航"
+        ],
+        [
+          "Nimbus 轻量跑鞋",
+          139,
+          2200,
+          "鞋服系列",
+          "再生材料 轻至210g"
+        ],
+        [
+          "Terra 户外双肩包 28L",
+          119,
+          800,
+          "配件系列",
+          "防水 防割面料"
+        ]
+      ]
+    },
+    {
+      "name": "subscribers",
+      "label": "邮件订阅",
+      "fields": [
+        {
+          "name": "email",
+          "label": "邮箱",
+          "type": "text"
+        },
+        {
+          "name": "region",
+          "label": "地区",
+          "type": "text"
+        },
+        {
+          "name": "date",
+          "label": "订阅日期",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "label": "转化状态",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "amy@example.com",
+          "US",
+          "2026-09-02",
+          "已转化"
+        ],
+        [
+          "leo@example.de",
+          "DE",
+          "2026-09-18",
+          "未转化"
+        ]
+      ]
+    },
+    {
+      "name": "campaigns",
+      "label": "投放活动",
+      "fields": [
+        {
+          "name": "name",
+          "label": "活动",
+          "type": "text"
+        },
+        {
+          "name": "channel",
+          "label": "渠道",
+          "type": "text"
+        },
+        {
+          "name": "spend",
+          "label": "花费(USD)",
+          "type": "number"
+        },
+        {
+          "name": "cac",
+          "label": "获客成本",
+          "type": "number"
+        },
+        {
+          "name": "roas",
+          "label": "ROAS",
+          "type": "number"
+        }
+      ],
+      "seed": [
+        [
+          "黑五预热 Meta投放",
+          "Meta",
+          8500,
+          3.2,
+          4.6
+        ],
+        [
+          "跑步季 Google搜索",
+          "Google",
+          5200,
+          2.8,
+          5.1
+        ]
+      ]
+    },
+    {
+      "name": "reviews",
+      "label": "用户评价",
+      "fields": [
+        {
+          "name": "product_id",
+          "label": "商品ID",
+          "type": "int"
+        },
+        {
+          "name": "user",
+          "label": "用户",
+          "type": "text"
+        },
+        {
+          "name": "content",
+          "label": "评价内容",
+          "type": "text"
+        },
+        {
+          "name": "stars",
+          "label": "星级",
+          "type": "int"
+        }
+      ],
+      "seed": [
+        [
+          1,
+          "Sarah K.",
+          "Noise cancelling is unreal for this price",
+          5
+        ],
+        [
+          2,
+          "Jonas M.",
+          "Light and comfy, ran 10k in them",
+          5
+        ]
+      ]
+    },
+    {
+      "name": "cart",
+      "label": "购物车",
+      "fields": [
+        {
+          "name": "user",
+          "label": "用户",
+          "type": "text"
+        },
+        {
+          "name": "product_id",
+          "label": "商品ID",
+          "type": "int"
+        },
+        {
+          "name": "qty",
+          "label": "数量",
+          "type": "int"
+        }
+      ],
+      "seed": []
+    },
+    {
+      "name": "orders",
+      "label": "订单",
+      "fields": [
+        {
+          "name": "order_no",
+          "label": "订单号",
+          "type": "text"
+        },
+        {
+          "name": "user",
+          "label": "下单人",
+          "type": "text"
+        },
+        {
+          "name": "items",
+          "label": "商品明细",
+          "type": "text"
+        },
+        {
+          "name": "total",
+          "label": "金额(元)",
+          "type": "number"
+        },
+        {
+          "name": "address",
+          "label": "收货地址",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "label": "状态",
+          "type": "text"
+        }
+      ],
+      "seed": []
+    },
+    {
+      "name": "users",
+      "label": "用户",
+      "fields": [
+        {
+          "name": "username",
+          "label": "用户名",
+          "type": "text"
+        },
+        {
+          "name": "password",
+          "label": "密码",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "label": "角色",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "admin",
+          "admin123",
+          "admin"
+        ],
+        [
+          "ops01",
+          "ops123456",
+          "ops"
+        ],
+        [
+          "view01",
+          "view123456",
+          "viewer"
+        ]
+      ]
+    }
+  ]
+}
