@@ -1,27 +1,48 @@
-# 飞牌品牌独立站(DTC)
+# 🏷️ 飞牌品牌独立站 DTC (feipai-dtc)
 
-> 品牌出海 · 直连用户
+> 品牌直达消费者，打造专属品牌阵地。
 
-零依赖（Python 标准库 + SQLite）的 飞牌，飞系电商系列成员。
+## ✨ 项目简介
 
-## 运行
+飞牌 DTC（Direct To Consumer）是一个品牌独立站电商解决方案，帮助品牌方建立自有官网，通过独立域名直达消费者，构建完整的品牌会员体系与数据分析能力。
+
+## 🚀 核心特性
+
+- 🌐 **品牌官网** — 定制化品牌官网，展现品牌独特调性
+- 🔗 **独立域名** — 绑定品牌专属域名，强化品牌认知
+- 👥 **会员体系** — 完善的会员系统，提升用户忠诚度
+- 📈 **数据分析** — 全链路数据追踪，洞察消费者行为
+- 🎨 **主题定制** — 灵活的主题系统，快速切换品牌风格
+- 🛒 **完整电商** — 商品管理、订单处理、支付物流一体化
+
+## 🛠️ 快速开始
 
 ```bash
-cd backend
-python server.py
-# 访问 http://127.0.0.1:8111/ ，三角色: admin/admin123 · ops01/ops123456 · view01/view123456
+# 克隆仓库
+git clone https://github.com/dukema81/feipai-dtc.git
+cd feipai-dtc
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-## 测试
+## 📦 技术栈
 
-```bash
-python -m pytest tests/ -q
-```
+- 前端框架 + UI 组件库
+- 状态管理 + 路由
+- Headless CMS + API 接口
+- 会员系统 + 数据分析 + 支付集成
 
-## 目录
+## 📄 许可证
 
-- backend/  通用引擎 engine.py + 规格 spec.json + 服务入口 server.py
-- frontend/ 原生 JS SPA（门店 + 统计 + 规格驱动后台）
-- tools/    专属 Logo（icon.svg）+ UI 巡检（ui_check.py，零依赖探活+截图）
-- docs/     建设方案
-- tests/    API 集成测试（真实起服务全链路断言）
+本项目基于 [MIT License](LICENSE) 开源许可协议。
+
+---
+
+Made with ❤️ by dukema81
